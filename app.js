@@ -2,56 +2,53 @@
 
 // 1. Получить первую и последнюю буквы строки//
 
-const str = 'some test string';
-let string;
-string = str.length;
-string = str[str.length -16]
-string = str[str.length -1]
-console.log(string)
+let string = 'some test string';
+// string = string.length;
+let first;
+first = string[0]
+console.log(first)
+let last;
+last = string[string.length -1]
+console.log(last)
 
 
 // 2.Сделать первую и последнюю буквы в верхнем регистре //
-
-string = str.toLocaleUpperCase() [str.length -16] ;
-console.log(string)
-string = str.toLocaleUpperCase() [str.length -1] ;
-console.log(string)
+let upper;
+upper = string.toLocaleUpperCase() [0] ;
+console.log(upper)
+let lower;
+lower = string.toLocaleUpperCase() [string.length -1];
+console.log(lower)
 
 // 3. Найти положение слова ‘string’ в строке //
-
-string = str.indexOf('string')
-console.log(string)
+let index;
+index = string.indexOf('string')
+console.log(index)
 
 // 4. Найти положение второго пробела (“вручную” ничего не считать) //
-
-string = str.lastIndexOf(' ')
-console.log(string)
+let lastIndex;
+lastIndex = string.lastIndexOf(' ')
+console.log(lastIndex)
 
 // 5. Получить строку с 5-го символа длиной 4 буквы //   - НЕ ПОНЯЛ КАК ДЕЛАТЬ.
 
-string = str.slice(4,)
-console.log(string)
+string = string.slice(4,)
 
 // 6. Получить строку с 5-го по 9-й символы //
 
-string = str.slice(4,9)
-console.log(string)
+string = string.slice(4,9)
 
 // 7. Получить новую строку из исходной путем удаления последних 6-и символов //
 
-string = str.slice(0 , -6)
-console.log(string)
+string = string.slice(0 , -6)
+
+// 8. Из двух переменных a=20 и b=16 получить переменную string, в которой будет
+//содержаться текст “2016”
 
 let a = '20'
 let b = '16'
 string = a + b
-console.log(string)
-
-
-
-
-
-
+console.log(a + b)
 
 
 
@@ -61,7 +58,7 @@ console.log(string)
 
 let value;
 value = (Math.PI).toFixed(2);
-console.log(value)
+
 
 // 2. Используя Math, найти максимальное и минимальное числа из представленного ряда 15, 11, 16, 12, 51, 12, 13, 51 //
 
@@ -82,19 +79,10 @@ value = Math.floor(Math.random() * 10 )
 
 value = 0.6 + 0.7;
 value = parseFloat(value.toFixed(1));
-console.log(value)
 
 // 5. Получить число из строки ‘100$’ //
 
 value = parseFloat("100$")
-
-
-
-
-
-
-
-
 
 
 
